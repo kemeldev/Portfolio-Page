@@ -1,0 +1,60 @@
+.navbarContainer {
+  width: 100vw;
+  padding: 8px 32px;
+  font-size: medium;
+  height: 60px;
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarRoutes {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-left: 30px;
+}
+
+.navbarRoutes h3 {
+  position: relative;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.navbarRoutes h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.8s ease;
+}
+
+.navbarRoutes h3:hover::after {
+  background-color: #000;
+  /* Set the color of the line on hover */
+}
+
+.navbarLogos {
+  display: flex;
+  width: 250px;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  padding-right: 80px;
+  transition: all 0.5s ease-in;
+}
+
+.navbarLogos div img {
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+.navbarLogos div img:hover {
+  transform: scale(1.1);
+}
