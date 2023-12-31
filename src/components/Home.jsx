@@ -5,18 +5,22 @@ import { saveAs } from 'file-saver'
 
 export function Home () {
   return (
-    <div className='homeContainer'>
+    <main className='home'>
+      <div className='homeContainer'>
 
-      <img src={myPhoto} alt='Picture of Kevin' />
+        <img src={myPhoto} alt='Picture of Kevin' />
 
-      <section className='homeMainText'>
-        <h1>Front-End Developer</h1>
-        <h2>Kevin</h2>
-        <h3>Convert ideas in reality!</h3>
-        <DownloadButton />
-        <ContactButton />
-      </section>
-    </div>
+        <section className='homeMainText'>
+          <h2>Kevin </h2>
+          <h2>Bolanos</h2>
+          <h4>Front-End Developer</h4>
+          <p>I am a software engineer who loves technology.</p>
+          <p>Let's create some amazing projects together!</p>
+          <DownloadButton />
+          <ContactButton />
+        </section>
+      </div>
+    </main>
   )
 }
 
